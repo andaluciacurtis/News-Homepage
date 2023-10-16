@@ -24,27 +24,33 @@ button {
   background-color: var(--soft-red);
   color: var(--off-white);
   letter-spacing: 2px;
+  margin-top: 20px;
 }
 
 h1 {
   color: var(--very-dark-blue);
   font-size: 45px;
   font-weight: 800;
+  padding: 7px 0px;
 }
 
 p {
   color: var(--dark-greyish-blue);
   font-size: 15px;
+  padding: 7px 0px;
+  line-height: 25px;
 }
 
 h2 {
   font-weight: 800;
   font-size: 28px;
+  padding: 7px 0px;
 }
 
 h3 {
   font-size: 17px;
   font-weight: 700;
+  padding: 7px 0px;
 }
 
 /* UTILITIES */
@@ -79,7 +85,7 @@ nav {
 /* FEATURE ARTICLE */
 .featured-article {
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 
 .featured-article img {
@@ -107,7 +113,7 @@ nav {
 
 .new-articles hr {
   border: 1px solid var(--dark-greyish-blue);
-  margin: 30px 0;
+  margin: 10px 0px;
 }
 
 /* BOTTOM ARTICLES */
