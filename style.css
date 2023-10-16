@@ -53,6 +53,11 @@ h3 {
   padding: 7px 0px;
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
 /* UTILITIES */
 
 .flex {
@@ -89,7 +94,8 @@ nav {
 }
 
 .featured-article img {
-  width: 60%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* NEW ARTICLES */
