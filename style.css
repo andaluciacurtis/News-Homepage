@@ -102,7 +102,7 @@ nav {
 
 .new-articles {
   background-color: var(--very-dark-blue);
-  padding: 15px;
+  padding: 20px;
 }
 
 .new-articles p {
@@ -111,6 +111,7 @@ nav {
 
 .new-articles h2 {
   color: var(--soft-orange);
+  margin-bottom: 10px;
 }
 
 .new-articles h3 {
