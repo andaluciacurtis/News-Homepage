@@ -23,11 +23,12 @@ button {
   border: none;
   background-color: var(--soft-red);
   color: var(--off-white);
+  letter-spacing: 2px;
 }
 
 h1 {
   color: var(--very-dark-blue);
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 800;
 }
 
@@ -46,10 +47,6 @@ h3 {
   font-weight: 700;
 }
 
-img {
-  max-width: 100%;
-}
-
 /* UTILITIES */
 
 .flex {
@@ -62,8 +59,7 @@ img {
   display: grid;
 
   gap: 40px;
-
-  width: 80%;
+  margin: 15px;
 }
 
 /* NAVBAR */
@@ -81,6 +77,11 @@ nav {
 }
 
 /* FEATURE ARTICLE */
+.featured-article {
+  display: grid;
+  gap: 20px;
+}
+
 .featured-article img {
   width: 60%;
 }
@@ -89,6 +90,7 @@ nav {
 
 .new-articles {
   background-color: var(--very-dark-blue);
+  padding: 15px;
 }
 
 .new-articles p {
@@ -105,13 +107,14 @@ nav {
 
 .new-articles hr {
   border: 1px solid var(--dark-greyish-blue);
+  margin: 30px 0;
 }
 
 /* BOTTOM ARTICLES */
 
 .bottom-articles {
   display: grid;
-  gap: 20px;
+  gap: 25px;
 }
 
 .bottom-articles h2 {
