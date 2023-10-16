@@ -12,6 +12,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* GENERAL STYLING */
 
 button {
@@ -23,40 +27,63 @@ button {
 
 h1 {
   color: var(--very-dark-blue);
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 800;
 }
 
 p {
   color: var(--dark-greyish-blue);
-  font-size: 0.8rem;
+  font-size: 15px;
 }
 
 h2 {
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 28px;
 }
 
 h3 {
+  font-size: 17px;
   font-weight: 700;
 }
 
+img {
+  max-width: 100%;
+}
+
+/* UTILITIES */
+
+.flex {
+  display: flex;
+}
+
+/* COMPONENTS */
+
 .container {
   display: grid;
+
+  gap: 40px;
+
+  width: 80%;
 }
 
 /* NAVBAR */
 .top-nav-container {
-  display: flex;
   justify-content: space-between;
+  padding: 30px 15px 20px 15px;
+}
+
+.logo {
+  max-width: 13%;
 }
 
 nav {
-  display: flex;
-  gap: 15px;
+  display: none;
 }
 
 /* FEATURE ARTICLE */
+.featured-article img {
+  width: 60%;
+}
 
 /* NEW ARTICLES */
 
@@ -82,6 +109,19 @@ nav {
 
 /* BOTTOM ARTICLES */
 
+.bottom-articles {
+  display: grid;
+  gap: 20px;
+}
+
 .bottom-articles h2 {
   color: var(--greyish-blue);
+}
+
+.bottom-articles div {
+  gap: 20px;
+}
+
+.bottom-articles img {
+  max-width: 30%;
 }
