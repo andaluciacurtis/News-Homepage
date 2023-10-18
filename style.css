@@ -96,6 +96,10 @@ img {
   max-width: 13%;
 }
 
+nav {
+  display: flex;
+}
+
 nav a:hover {
   color: var(--soft-orange);
   transition-duration: 0.5s;
@@ -178,8 +182,32 @@ nav a:hover {
 }
 
 @media (max-width: 704px) {
+  .darken-bg-helper {
+    position: fixed;
+    inset: 0 0 0 0;
+    
+    background-color: rgb(0, 0, 0);
+    opacity: 40%;
+  }
+
   nav {
-    display: none;
+    background-color: white;
+
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+
+    padding-top: 200px;
+  }
+
+  nav a {
+    padding: 15px 30px;;
+    font-size: 19px;
+  }
+
+  .close-icon {
+    z-index: 10000;
+    position: fixed;
   }
 }
 
