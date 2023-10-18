@@ -182,12 +182,17 @@ nav a:hover {
 }
 
 @media (max-width: 704px) {
+  .outer-container {
+    overflow-x: hidden;
+  }
+
   .darken-bg-helper {
     position: fixed;
     inset: 0 0 0 0;
     
     background-color: rgba(0, 0, 0, 0.322);
     opacity: 0%;
+    transition-duration: 1s;
   }
 
   nav {
@@ -212,15 +217,20 @@ nav a:hover {
     font-size:20px;
   }
 
-  .mobile-nav-icon {
-    z-index: 10000;
+  .mobile-nav-icon img {
     position: absolute;
     top: 2rem;
     right: 2rem;
   }
 
+  .close-icon {
+    z-index: 9999;
+    opacity: 0;
+  }
+
   .appear {
     opacity: 100%;
+    display: block;
     transition-duration: 1s;
   }
 }
