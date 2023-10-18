@@ -63,12 +63,6 @@ img {
   max-width: 100%;
 }
 
-/* UTILITIES */
-
-.flex {
-  display: flex;
-}
-
 /* COMPONENTS */
 
 .container {
@@ -80,6 +74,7 @@ img {
 
 /* NAVBAR */
 .top-nav-container {
+  display: flex;
   justify-content: space-between;
   padding: 30px 15px 20px 15px;
 }
@@ -185,5 +180,13 @@ nav {
   .bottom-articles {
     grid-column: span 3;
     display: flex;
+  }
+
+  .article-container {
+    display: flex;
+  }
+
+  .article-container img, .article-text {
+    width: 50%;
   }
 }
