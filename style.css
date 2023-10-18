@@ -25,6 +25,12 @@ button {
   color: var(--off-white);
   letter-spacing: 2px;
   margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover { 
+  background-color: var(--very-dark-blue);
+  transition-duration: 1s;
 }
 
 h1 {
@@ -49,12 +55,18 @@ a {
 
 h2 {
   font-weight: 800;
-  font-size: 28px;
+  font-size: 35px;
   padding: 7px 0px;
 }
 
 h3 {
-  font-size: 17px;
+  font-weight: 800;
+  font-size: 28px;
+  padding: 7px 0px;
+}
+
+h4 {
+  font-size: 18px;
   font-weight: 700;
   padding: 7px 0px;
 }
@@ -76,6 +88,7 @@ img {
 .top-nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px 15px 20px 15px;
 }
 
@@ -83,8 +96,9 @@ img {
   max-width: 13%;
 }
 
-nav {
-  display: none;
+nav a:hover {
+  color: var(--soft-orange);
+  transition-duration: 0.5s;
 }
 
 /* FEATURE ARTICLE */
@@ -101,7 +115,7 @@ nav {
 
 .new-articles {
   background-color: var(--very-dark-blue);
-  padding: 20px;
+  padding: 30px 40px;
 }
 
 .new-articles p {
@@ -113,8 +127,13 @@ nav {
   margin-bottom: 10px;
 }
 
-.new-articles h3 {
+.new-articles h4 {
   color: var(--off-white);
+  cursor: pointer;
+}
+
+.new-articles h4:hover {
+  color: var(--soft-orange);
 }
 
 .new-articles hr {
@@ -129,7 +148,7 @@ nav {
   gap: 25px;
 }
 
-.bottom-articles h2 {
+.bottom-articles h3 {
   color: var(--greyish-blue);
 }
 
@@ -137,15 +156,45 @@ nav {
   gap: 20px;
 }
 
+.article-container {
+  display: flex;
+  align-items: center; 
+}
+
+.article-container img {
+  width: 30%;
+}
+
+.article-text {
+  width: 70%;
+}
+
+.article-container h4 {
+  cursor: pointer;
+}
+
+.article-container h4:hover {
+  color: var(--soft-red);
+}
+
+@media (max-width: 704px) {
+  nav {
+    display: none;
+  }
+}
+
 
 @media (min-width: 705px) {
+
+  .outer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
 
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
 
-    max-width: 70%;
-    margin: auto;
   }
 
   .featured-article {
@@ -165,10 +214,6 @@ nav {
     grid-column: span 2;
   }
 
-  nav {
-    display: block;
-  }
-
   .mobile-nav {
     display: none;
   }
@@ -180,13 +225,5 @@ nav {
   .bottom-articles {
     grid-column: span 3;
     display: flex;
-  }
-
-  .article-container {
-    display: flex;
-  }
-
-  .article-container img, .article-text {
-    width: 50%;
   }
 }
