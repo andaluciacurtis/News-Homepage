@@ -246,7 +246,14 @@ nav a:hover {
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
+  }
 
+  .mobile-nav-icon {
+    display: none;
+  }
+
+  nav {
+    gap: 10px;
   }
 
   .featured-article {
